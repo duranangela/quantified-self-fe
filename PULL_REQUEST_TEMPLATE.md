@@ -1,4 +1,4 @@
-#### Pivotal URL:
+#### Waffle URL:
 
 #### What does this PR do?
 
