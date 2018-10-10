@@ -13,11 +13,11 @@
   </div>
   <div class='calorie-goal'>
     <h2>Your Daily Calorie Goal is:
-    <input type='number' id='calorie-goal' min='1000' max ='2500' placeholder="1500"></input></h2>
+    <input type='number' id='calorie-goal' min='1000' max ='2500' value="1500"></input></h2>
   </div>
   <div class='food-diary'>
     <h2>Your Food Diary for:
-    <input type='date' id='diary-date' placeholder="today's date"></input></h2>
+    <input type='text' id='diary-date' placeholder="today's date"></input></h2>
     <!--calendar widget here  -->
     <table>
       <tr>
@@ -26,61 +26,22 @@
       </tr>
       <tr>
         <table>
-          <tr><th>Breakfast</th></tr>
-          <tr>
-            <td>Banana</td>
-            <td>150</td>
-            <td><button class="default-button">Remove</button></td>
-          </tr>
-          <tr><td><button class="default-button">Add Food</button></td></tr>
+          <div class='meals-list'></div>
         </table>
-      </tr>
-      <tr>
-        <table>
-          <tr><th>Lunch</th></tr>
-          <tr>
-            <td>Sandwich</td>
-            <td>400</td>
-            <td><button class="default-button">Remove</button></td>
-          </tr>
-          <tr><td><button class="default-button">Add Food</button></td></tr>
-        </table>
-      </tr>
-      <tr>
-        <table>
-          <tr><th>Dinner</th></tr>
-          <tr>
-            <td>Tamale</td>
-            <td>250</td>
-            <td><button class="default-button">Remove</button></td>
-          </tr>
-          <tr><td><button class="default-button">Add Food</button></td></tr>
-        </table>
-      </tr>
-      <tr>
-        <table>
-          <tr><th>Snacks</th></tr>
-          <tr>
-            <td>Banana</td>
-            <td>150</td>
-            <td><button class="default-button">Remove</button></td>
-          </tr>
-          <tr><td><button class="default-button">Add Food</button></td></tr>
-        </table>
-      </tr>
-      <tr>
-        <td>Calories Eaten</td>
-        <td>950</td>
       </tr><br>
       <tr>
+        <td>Calories Eaten</td>
+        <td><div id='total'></div></td>
+      </tr>
+      <tr>
         <td>Calories Remaining</td>
-        <td>1050</td>
+        <td><div id='remaining'></div></td>
       </tr>
     </table>
   </div>
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
   </script>
-  <script src="main.bundle.js"></script>
+  <script src="lib/index.js"></script>
 </body>
 </html>
