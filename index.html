@@ -13,7 +13,7 @@
   </div>
   <div class='calorie-goal'>
     <h2>Your Daily Calorie Goal is:
-    <input type='number' id='calorie-goal' min='1000' max ='2500' placeholder="1500"></input></h2>
+    <input type='number' id='calorie-goal' min='1000' max ='2500' value="1500"></input></h2>
   </div>
   <div class='food-diary'>
     <h2>Your Food Diary for:
@@ -28,20 +28,20 @@
         <table>
           <div class='meals-list'></div>
         </table>
-      </tr>
-      <tr>
-        <td>Calories Eaten</td>
-        <td>950</td>
       </tr><br>
       <tr>
+        <td>Calories Eaten</td>
+        <td><div id='total'></div></td>
+      </tr>
+      <tr>
         <td>Calories Remaining</td>
-        <td>1050</td>
+        <td><div id='remaining'></div></td>
       </tr>
     </table>
   </div>
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
   </script>
-  <script src="main.bundle.js"></script>
+  <script src="lib/index.js"></script>
 </body>
 </html>
