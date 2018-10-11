@@ -1,0 +1,73 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 118px 40px 250px 120px;
+}
+
+.nav {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #44BBA4;
+  width: 100%;
+}
+
+.nav-title {
+  font-family: 'Lemon', cursive;
+  color: #393E41;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  background-color: #393E41;
+  height: 5px;
+}
+
+.add-food-bar {
+  padding-top: 20px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: center;
+  background-color: #F6F7EB;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  color: #393E41;
+}
+
+.add-checked-food-button {
+  height: 20px;
+}
+
+.food-table {
+  padding-top: 20px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #F6F7EB;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  color: #393E41;
+}
+
+.food-table-elements {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new-food-bar {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  color: #393E41;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #F6F7EB;
+  width: 100%;
+}
