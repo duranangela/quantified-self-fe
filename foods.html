@@ -2,18 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="lib/foods.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemon|Raleway" rel="stylesheet">
     <title>Lard-Away - Manage Foods</title>
   </head>
   <body>
     <div class='nav'>
-      <h1>Lard-Away</h1>
+      <h1 class="nav-title">Lard-Away</h1>
+      <div class='nav-buttons'>
       <a href="index.html"><button class="default-button">Meal Diary</button></a>
       <a href="foods.html"><button class="default-button">Manage Foods</button></a>
-      <hr>
+    </div>
+    <hr>
     </div>
       <div class='add-food-bar'>
         <button type="button" class="add-checked-food-button">Add Checked</button>
-        <span>Food to</span>
+        <span> Food to </span>
         <select>
           <option value="Breakfast">Breakfast</option>
           <option value="Lunch">Lunch</option>
@@ -21,19 +25,23 @@
           <option value="Snack">Snack</option>
         </select>
       </div>
-      <div>
-        <table class="food-table">
-          <tr>
-            <th id="table-food">Food</th>
-            <th id="table-calories">Calories</th>
-          </tr>
-        </table>
+      <div class='food-table-elements'>
+        <div class="food-table">
+          <table>
+            <tr>
+              <th id="table-food">Food</th>
+              <th id="table-calories">Calories</th>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="new-food-bar">
-        <p>Create New Food:</p>
-        <label>Name </label><input type='text' id='food-name'><br>
-        <label>Calories </label><input type='text' id='food-calories'><br>
-        <button type="button" id="submit-food-button">Submit</button>
+        <div class='new-food-elements'>
+          <p>Create New Food:</p>
+          <label>Name </label><input type='text' id='food-name'><br>
+          <label>Calories </label><input type='text' id='food-calories'><br>
+          <button type="button" id="submit-food-button">Submit</button>
+        </div>
       </div>
       <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
       </script>
