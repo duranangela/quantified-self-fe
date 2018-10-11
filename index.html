@@ -2,42 +2,63 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Lard-Away - Meal Diary</title>
+  <title>MantecaMinimizer - Meal Diary</title>
 </head>
 <body>
   <div class='nav'>
-    <h1>Lard-Away</h1>
+    <h1>MantecaMinimizer</h1>
     <a href="index.html"><button class="default-button">Meal Diary</button></a>
     <a href="foods.html"><button class="default-button">Manage Foods</button></a>
     <hr>
   </div>
   <div class='calorie-goal'>
     <h2>Your Daily Calorie Goal is:
-    <input type='number' id='calorie-goal' min='1000' max ='2500' value="1500"></input></h2>
+    <input type='number' id='calorie-goal' min='1000' max ='2500' value="1500" onkeyup="totalRemaining()"></input></h2>
   </div>
   <div class='food-diary'>
     <h2>Your Food Diary for:
     <input type='text' id='diary-date' placeholder="today's date"></input></h2>
     <!--calendar widget here  -->
-    <table>
-      <tr>
-        <th>Meal</th>
-        <th>Calories</th>
-      </tr>
-      <tr>
-        <table>
-          <div class='meals-list'></div>
-        </table>
-      </tr><br>
-      <tr>
-        <td>Calories Eaten</td>
-        <td><div id='total'></div></td>
-      </tr>
-      <tr>
-        <td>Calories Remaining</td>
-        <td><div id='remaining'></div></td>
-      </tr>
-    </table>
+    <div>
+      <table border="1" class="meal">
+        <tr><th>Breakfast</th></tr>
+        <tr><td><div class="foods" id='Breakfast'></div></td></tr>
+        <tr><td><a href="foods.html"><button class="default-button">Add Food</button></a></td></tr>
+      </table>
+    </div>
+    <div>
+      <table border="1" class="meal">
+        <tr><th>Lunch</th></tr>
+        <tr><td><div class="foods" id='Lunch'></div></td></tr>
+        <tr><td><a href="foods.html"><button class="default-button">Add Food</button></a></td></tr>
+      </table>
+    </div>
+    <div>
+      <table border="1" class="meal">
+        <tr><th>Dinner</th></tr>
+        <tr><td><div class="foods" id='Dinner'></div></td></tr>
+        <tr><td><a href="foods.html"><button class="default-button">Add Food</button></a></td></tr>
+      </table>
+    </div>
+    <div>
+      <table border="1" class="meal">
+        <tr><th>Snacks</th></tr>
+        <tr><td><div class="foods" id='Snack'></div></td></tr>
+        <tr><td><a href="foods.html"><button class="default-button">Add Food</button></a></td></tr>
+      </table>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td>Calories Eaten</td>
+          <td><div id='total'></div></td>
+        </tr>
+        <tr>
+          <td>Calories Remaining</td>
+          <td><div id='remaining'></div></td>
+        </tr>
+      </table>
+    </div>
   </div>
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
