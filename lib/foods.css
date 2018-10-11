@@ -1,7 +1,8 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 118px 40px 250px 120px;
+  grid-template-rows: 118px 60px 250px 120px;
+  background-color: #F6F7EB;
 }
 
 .nav {
@@ -38,6 +39,7 @@ hr {
   width: 100%;
   font-family: 'Raleway', sans-serif;
   color: #393E41;
+  margin-bottom: 20px;
 }
 
 .add-checked-food-button {
@@ -45,10 +47,11 @@ hr {
 }
 
 .food-table {
-  padding-top: 20px;
+  border-style: solid;
+  border-color: #44BBA4;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: #F6F7EB;
+  background-color: White;
   width: 100%;
   font-family: 'Raleway', sans-serif;
   color: #393E41;
