@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 118px 60px 250px 120px;
+  /* grid-template-rows: 118px 60px 250px 120px; */
   background-color: #F6F7EB;
 }
 
@@ -68,6 +68,7 @@ hr {
   font-family: 'Raleway', sans-serif;
   color: #393E41;
   margin-bottom: 100px;
+  /* background-image: url('abundance.jpg') */
 }
 
 .food-diary {

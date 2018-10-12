@@ -68,18 +68,56 @@ hr {
   border-style: solid;
   border-color: #44BBA4;
   background-color: White;
-  width: 30%;
+  width: 25%;
   font-family: 'Raleway', sans-serif;
   color: #393E41;
 }
 
 .new-food-bar {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   font-family: 'Raleway', sans-serif;
   color: #393E41;
-  grid-column-start: 1;
-  grid-column-end: 2;
   background-color: #F6F7EB;
   width: 100%;
+}
+
+.new-food-elements {
+  display: grid;
+  justify-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+}
+
+td {
+  padding: 4px;
+}
+
+.remove {
+  height: 20px;
+  background-color: #E94F37;
+  color: #F6F7EB;
+}
+
+#create-title {
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+#food-name, #food-calories {
+  height: 18px;
+  font-size: 18px;
+}
+
+#submit-food-button {
+  height: 25px;
+  font-size: 20px;
+  background-color: #3F88C5;
+  color: #F6F7EB;
 }
