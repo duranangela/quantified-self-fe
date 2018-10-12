@@ -7,16 +7,16 @@
     <title>MantecaMinimizer</title>
   </head>
   <body>
-    <div class='nav'>
-      <h1 class="nav-title">MantecaMinimizer</h1>
-      <div class='nav-buttons'>
-        <a href="index.html"><button class="default-button">Meal Diary</button></a>
-        <a href="foods.html"><button class="default-button">Manage Foods</button></a>
+    <div class='main'>
+      <div class='nav'>
+        <div><h1 class="nav-title">MantecaMinimizer</h1></div>
+        <div class='nav-buttons'>
+          <a href="index.html"><button class="nav-btn" id='diary-btn'>Meal Diary</button></a>
+          <a href="foods.html"><button class="nav-btn" id='foods-btn'>Manage Foods</button></a>
+        </div>
+        <hr>
       </div>
-      <hr>
-    </div>
-      <div class='add-food-bar'>
-      </div>
+      <div class='add-food-bar'></div>
       <div class='food-table-elements'>
         <div class="food-table">
           <table>
@@ -35,10 +35,10 @@
           <button type="button" id="submit-food-button">Submit</button>
         </div>
       </div>
-      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
-      </script>
-      <script src="main.bundle.js"></script>
-      <script src="lib/food.js"></script>
     </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+    </script>
+    <script src="main.bundle.js"></script>
+    <script src="lib/food.js"></script>
   </body>
 </html>
