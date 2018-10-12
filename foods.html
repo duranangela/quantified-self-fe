@@ -7,39 +7,40 @@
     <title>MantecaMinimizer</title>
   </head>
   <body>
-    <div class='nav'>
-      <h1 class="nav-title">MantecaMinimizer</h1>
-      <div class='nav-buttons'>
-        <a href="index.html"><button class="default-button">Meal Diary</button></a>
-        <a href="foods.html"><button class="default-button">Manage Foods</button></a>
+
+    <div class='main'>
+      <div class='nav'>
+        <div><h1 class="nav-title">MantecaMinimizer</h1></div>
+        <div class='nav-buttons'>
+          <a href="index.html"><button class="nav-btn" id='diary-btn'>Meal Diary</button></a>
+          <a href="foods.html"><button class="nav-btn" id='foods-btn'>Manage Foods</button></a>
+        </div>
+        <hr>
       </div>
-      <hr>
-    </div>
-      <div class='add-food-bar'>
-      
-      </div>
+      <div class='add-food-bar'></div>
       <div class='food-table-elements'>
         <div class="food-table">
-          <table>
+          <table width="100%">
             <tr>
-              <th id="table-food">Food</th>
-              <th id="table-calories">Calories</th>
+              <th class='title' id="table-food" width='60%' align="left">Food</th>
+              <th class='title' id="table-calories" width='25%'>Calories</th>
+              <th width='15%'></th>
             </tr>
           </table>
         </div>
       </div>
       <div class="new-food-bar">
         <div class='new-food-elements'>
-          <p>Create New Food:</p>
-          <label>Name </label><input type='text' id='food-name'><br>
-          <label>Calories </label><input type='text' id='food-calories'><br>
-          <button type="button" id="submit-food-button">Submit</button>
+          <div id='create-title'>Create New Food:</div>
+          <div><input type='text' id='food-name' placeholder="Name"></div><br>
+          <div><input type='text' id='food-calories' placeholder="Calories"></div><br>
+          <div><button type="button" id="submit-food-button">Submit</button></div>
         </div>
       </div>
-      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
-      </script>
-      <script src="main.bundle.js"></script>
-      <script src="lib/food.js"></script>
     </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+    </script>
+    <script src="main.bundle.js"></script>
+    <script src="lib/food.js"></script>
   </body>
 </html>
