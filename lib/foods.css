@@ -68,7 +68,7 @@ hr {
   border-style: solid;
   border-color: #44BBA4;
   background-color: White;
-  width: 25%;
+  width: 40%;
   font-family: 'Raleway', sans-serif;
   color: #393E41;
 }
@@ -116,6 +116,13 @@ td {
 }
 
 #submit-food-button {
+  height: 25px;
+  font-size: 20px;
+  background-color: #3F88C5;
+  color: #F6F7EB;
+}
+
+#add-selected-food-button {
   height: 25px;
   font-size: 20px;
   background-color: #3F88C5;
