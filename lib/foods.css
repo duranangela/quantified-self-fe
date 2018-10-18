@@ -6,8 +6,8 @@ body {
 }
 
 .nav {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
   background-color: #44BBA4;
   width: 100%;
 }
@@ -39,7 +39,8 @@ body {
 
 hr {
   background-color: #393E41;
-  height: 5px;
+  height: 9px;
+  margin-bottom: -5px;
 }
 
 .add-food-bar {
@@ -55,8 +56,9 @@ hr {
   margin-bottom: 20px;
 }
 
-/* .add-checked-food-button {
-  height: 20px;
+/* .main {
+  background-image: url('abundance.jpg');
+  background-size: cover;
 } */
 
 .food-table-elements {
@@ -68,7 +70,8 @@ hr {
   border-style: solid;
   border-color: #44BBA4;
   background-color: White;
-  width: 40%;
+  width: 30%;
+  min-width: 400px;
   font-family: 'Raleway', sans-serif;
   color: #393E41;
 }

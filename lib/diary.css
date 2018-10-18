@@ -6,8 +6,8 @@ body {
 }
 
 .nav {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
   background-color: #44BBA4;
   width: 100%;
 }
@@ -68,7 +68,8 @@ hr {
   font-family: 'Raleway', sans-serif;
   color: #393E41;
   margin-bottom: 100px;
-  /* background-image: url('abundance.jpg') */
+  /* background-image: url('abundance.jpg');
+  background-size: cover; */
 }
 
 .food-diary {
@@ -76,6 +77,15 @@ hr {
   grid-template-columns: 1fr;
   justify-items: center;
 }
+
+/* #goal-title {
+  color: white;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+} */
 
 .meal {
   border-style: solid;
