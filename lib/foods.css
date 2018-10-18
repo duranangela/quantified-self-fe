@@ -17,6 +17,7 @@ body {
   color: #393E41;
   display: flex;
   justify-content: center;
+
 }
 
 .nav-buttons {
@@ -74,6 +75,14 @@ hr {
   min-width: 400px;
   font-family: 'Raleway', sans-serif;
   color: #393E41;
+}
+
+#food-search {
+  width: 90%;
+  border: 1px solid black;
+  height: 18px;
+  font-size: 18px;
+  margin: 10px;
 }
 
 .new-food-bar {
