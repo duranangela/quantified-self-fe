@@ -1,31 +1,33 @@
 body {
   display: grid;
-  grid-template-columns: 1fr;
-  /* grid-template-rows: 118px 60px 250px 120px; */
-  background-color: #F6F7EB;
+  grid-template-rows: 200px auto;
+  font-family: 'Raleway', sans-serif;
+  background-color: #EFEFEF
 }
 
 .nav {
-  /* grid-column-start: 1;
-  grid-column-end: 2; */
-  background-color: #44BBA4;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+
+img {
+  width: 100px;
+  height: 200px;
+  float: left;
+}
+
+.nav-words {
+  height: 200px;
+  color: #393E41;
+  background-color: white;
+  padding-left: 20px;
 }
 
 .nav-title {
-  font-family: 'Lemon', cursive;
-  color: #393E41;
-  display: flex;
-  justify-content: center;
-}
-
-.nav-buttons {
-  display: flex;
-  justify-content: center;
+  font-size: 50px;
 }
 
 .nav-btn {
-  font-family: 'Lemon', cursive;
   font-size: 15px;
   color: #393E41;
   height: 30px;
@@ -33,68 +35,42 @@ body {
 }
 
 #diary-btn {
-  background-color: #3F88C5;
-  color: #F6F7EB;
-}
-
-hr {
-  background-color: #393E41;
-  height: 5px;
-  margin-bottom: -5px;
-}
-
-#calorie-goal, #diary-date {
-  height: 20px;
-  font-size: 18px;
-}
-
-.add {
-  height: 20px;
-  background-color: #3F88C5;
-  color: #F6F7EB;
-  margin: 5px;
-}
-
-.remove {
-  height: 20px;
-  background-color: #E94F37;
+  background-color: #426A5A;
   color: #F6F7EB;
 }
 
 .main {
+  background-color: #F2C57C;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-family: 'Raleway', sans-serif;
-  color: #393E41;
-  margin-bottom: 100px;
-  /* background-image: url('abundance.jpg');
-  background-size: cover; */
+  padding-left: 15%;
+}
+
+.calorie-goal {
+  width: 400px;
+  border: 2px solid #426A5A;
+  background-color: white;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .food-diary {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-
-/* #goal-title {
-  color: white;
-  text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-} */
-
-.meal {
-  border-style: solid;
-  border-color: #44BBA4;
-  background-color: White;
-  width: 90%;
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: left;
+}
+
+.meal {
+  width: 400px;
+  border: 2px solid #426A5A;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
 }
 
 .foods {
@@ -109,21 +85,30 @@ hr {
   padding: 4px;
 }
 
-.title {
-  font-weight: bold;
-  font-size: 18px;
-  padding: 5px;
-}
-
-#totals {
-  display: flex;
-  flex-direction: column;
-}
-
 .total {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
   font-weight: bold;
   font-size: 18px;
   padding: 5px;
+}
+
+#calorie-goal {
+  height: 20px;
+  font-size: 18px;
+}
+
+.add {
+  height: 20px;
+  background-color: #7FB685;
+  color: #F6F7EB;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.remove {
+  height: 20px;
+  background-color: #EF6F6C;
+  color: #F6F7EB;
+    border-radius: 5px;
 }
