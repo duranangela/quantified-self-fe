@@ -52,9 +52,10 @@ img {
   justify-items: left;
 }
 
-.food-table, .new-food-elements, .add-food-bar {
+.food-table, .new-food-elements, .add-food-bar, .save-changes-btn{
   background-color: White;
-  width: 400px;
+  width: 45%;
+  min-width: 400px;
   margin: 5px;
 }
 
@@ -105,6 +106,13 @@ td {
   border-radius: 5px;
 }
 
+.edit {
+  height: 20px;
+  background-color: #3F88C5;
+  color: #F6F7EB;
+  border-radius: 5px;
+}
+
 #submit-food-button {
   height: 25px;
   font-size: 20px;
@@ -114,6 +122,15 @@ td {
   border-radius: 5px;
 }
 
+#save-btn {
+  width: 90%;
+  height: 25px;
+  font-size: 20px;
+  background-color: #7FB685;
+  color: #F6F7EB;
+  margin: 5%;
+  border-radius: 5px;
+}
 /* #submit-food-button {
   height: 25px;
   font-size: 20px;
