@@ -1,13 +1,137 @@
 body {
   display: grid;
+  grid-template-rows: 200px auto;
+  font-family: 'Raleway', sans-serif;
+  background-color: #EFEFEF
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+
+img {
+  width: 100px;
+  height: 200px;
+  float: left;
+}
+
+.nav-words {
+  height: 200px;
+  color: #393E41;
+  background-color: white;
+  padding-left: 20px;
+}
+
+.nav-title {
+  font-size: 50px;
+}
+
+.nav-btn {
+  font-size: 15px;
+  color: #393E41;
+  height: 30px;
+  margin: 5px;
+}
+
+#foods-btn {
+  background-color: #426A5A;
+  color: #F6F7EB;
+}
+
+.main {
+  background-color: #F2C57C;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+  padding-bottom: 5%;
+}
+
+.food-table-elements, .new-food-bar {
+  display: grid;
+  justify-items: left;
+}
+
+.food-table, .new-food-elements, .add-food-bar {
+  background-color: White;
+  width: 400px;
+  margin: 5px;
+}
+
+.food-table, .new-food-elements {
+  border: 2px solid #426A5A;
+}
+
+#add-selected-food-button {
+  width: 90%;
+  height: 25px;
+  font-size: 20px;
+  background-color: #7FB685;
+  color: #F6F7EB;
+  margin: 5%;
+  border-radius: 5px;
+}
+
+.new-food-elements {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+}
+
+#food-search, #food-name, #food-calories {
+  width: 90%;
+  border: 1px solid black;
+  height: 18px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#food-search {
+  margin-left: 5%;
+}
+
+td {
+  padding: 4px;
+}
+
+.remove {
+  height: 20px;
+  background-color: #EF6F6C;
+  color: #F6F7EB;
+  border-radius: 5px;
+}
+
+#submit-food-button {
+  height: 25px;
+  font-size: 20px;
+  background-color: #7FB685;
+  color: #F6F7EB;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* #submit-food-button {
+  height: 25px;
+  font-size: 20px;
+  background-color: #3F88C5;
+  color: #F6F7EB;
+} */
+
+.
+/* body {
+  display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 118px 60px 250px 120px; */
+  grid-template-rows: 118px 60px 250px 120px;
   background-color: #F6F7EB;
 }
 
 .nav {
-  /* grid-column-start: 1;
-  grid-column-end: 2; */
+  grid-column-start: 1;
+  grid-column-end: 2;
   background-color: #44BBA4;
   width: 100%;
 }
@@ -57,10 +181,10 @@ hr {
   margin-bottom: 20px;
 }
 
-/* .main {
+.main {
   background-image: url('abundance.jpg');
   background-size: cover;
-} */
+}
 
 .food-table-elements {
   display: grid;
@@ -139,4 +263,4 @@ td {
   font-size: 20px;
   background-color: #3F88C5;
   color: #F6F7EB;
-}
+} */
