@@ -44,6 +44,9 @@ img {
   display: flex;
   flex-direction: column;
   padding-left: 15%;
+  background-image: url('abundance.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .calorie-goal {
