@@ -53,7 +53,6 @@ body {
   display: grid;
   justify-items: center;
   width: 90%;
-  /* border: 1px solid black; */
 }
 
 .food-table-elements {
@@ -74,7 +73,6 @@ body {
 }
 
 .food-table {
-  /* min-height: 101%; */
   overflow: scroll;
 }
 
@@ -84,8 +82,10 @@ body {
   font-size: 20px;
   background-color: #7FB685;
   color: #F6F7EB;
-  margin: 5%;
+  margin-top: 10px;
+  margin-left: 5%;
   border-radius: 5px;
+
 }
 
 .new-food-elements {
@@ -132,6 +132,7 @@ td {
 
 #save-changes-btn, #add-food-bar {
   height: 50px;
+  margin-top: 45px;
 }
 
 #save-btn {
@@ -142,12 +143,13 @@ td {
   color: #F6F7EB;
   margin: 5%;
   border-radius: 5px;
+  margin-top: 9px;
+  margin-left: 5%;
 }
 
 .recipes {
   height: 400px;
   overflow: scroll;
-  grid-row: span 2;
   display: grid;
   grid-auto-rows: repeat(auto-fill, minmax(1fr, 150px;));
   justify-items: left;
